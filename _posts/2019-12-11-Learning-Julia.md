@@ -1,6 +1,13 @@
 ---
 layout: post
 title: Learning Julia
+values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 ---
 
 If you haven't heard of Julia, it is a new programming language that advertises high-performance (e.g. close to C or Fortran) while having a dynamic feel (like R or Python). The initial v1.0 was released quite recently (Aug 2018) and it is now up to v1.3 (released Nov 2019). One of the long-awaited features included in the latest release is automatic thread spawning (although it is marked as experimental).
@@ -86,4 +93,4 @@ Now, how do we do this in Julia, given that
 
 3. Julia does not support inheritance.
 
-<to be continued...>
+...to be continued...
