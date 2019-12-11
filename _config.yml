@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Takuya Iwanaga"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : https://avatars2.githubusercontent.com/u/4075136?s=460&v=4
   bio              : "PhD Candidate at the Australian National University"
   location         : "Canberra, Australia"
   email            :
