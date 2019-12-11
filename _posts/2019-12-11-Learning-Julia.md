@@ -2,14 +2,14 @@
 title: Learning Julia
 ---
 
-If you haven't heard of Julia, it is a new programming language that advertises high-performance (e.g. close to C or Fortran) while having a dynamic feel (like R or Python). The initial v1.0 was released quite recently (Aug 2018) and it is now up to v1.3 (released Nov 2019). One of the long-awaited features included in the latest release is automatic thread spawning (although it is marked as experimental).
-
-Syntactically it looks vaguely like a mix of Matlab and Python. The biggest draw card of Julia is definitely the promised performance gain in comparison to Python or R.
+If you haven't heard of Julia, it is a new programming language that advertises high performance (e.g. close to C or Fortran) while having a dynamic feel like R or Python. The initial v1.0 was released quite recently (Aug 2018) and it is now up to v1.3 (released Nov 2019). One of the long-awaited features included in the latest release is automatic thread spawning (although it is marked as experimental). Syntactically it looks vaguely like a mix of Matlab and Python. The biggest draw card of Julia is definitely the promised performance gain in comparison to Python or R.
 
 I've been picking up Julialang on and off for the past two years or so now, but never really got stuck into it. In recent weeks I've decided to take on two relatively big side projects. The first is to move the agricultural management model I developed as part of my PhD to Python 3, which I've named Agtor. The second was to port Agtor across to Julia. The reasoning for this is three-fold: 
 
 1) For various reasons Agtor is outgrowing the performance that Python can offer.
+
 2) A clean Python implementation is still useful for demonstration and prototyping purposes (hence the port to Python 3 - not to mention Python 2 is end-of-life on 1 Jan 2020!)
+
 3) I wanted to dive in and learn Julia with a non-trivial project
 
 Some aspects of point 1 could be addressed by leveraging numba or Cython. From my admittedly brief experience with numba, its efficacy seems to be restricted to the computationally intensive - places where a lot of mathematical calculations occur. This is not really Agtor's situation.
