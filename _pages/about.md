@@ -1,9 +1,10 @@
 ---
-title: about
+title: About me
+permalink: /about/
 ---
 
 PhD Candidate in Environmental Modelling at the Australian National University.
 
 ### More Information
 
-Hmm, I'll flesh this out later...
+Hmm, I'll flesh this out later...   
