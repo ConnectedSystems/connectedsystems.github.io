@@ -1,6 +1,5 @@
 ---
-title: About
-permalink: /about/
+title: about
 ---
 
 PhD Candidate in Environmental Modelling at the Australian National University.
