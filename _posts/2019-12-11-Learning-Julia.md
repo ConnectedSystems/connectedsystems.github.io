@@ -110,6 +110,8 @@ function Base.getproperty(c::Cup, v::Symbol)
     if v == :volume_in_L
         return c.volume / 1000.0
     else
+        # Note we use getfield, instead of getproperty
+        # This is to avoid infinite recursion
         return getfield(a, v)
     end
 end
@@ -120,7 +122,9 @@ function Base.setproperty!(c::Cup, v::Symbol, value)
         vol_ml = value * 1000.0
         c.volume = min(vol_ml, c.capacity)
     else
-        setproperty!(c, v, value)
+        # Note we use setfield, instead of setproperty
+        # This is to avoid infinite recursion
+        setfield!(c, v, value)
     end
 end
 ```
