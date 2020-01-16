@@ -2,7 +2,7 @@
 title: A new language stack for integrated modelling - Some unscientific benchmarks
 ---
 
-In the previous post I spoke of finding a new language to include in my primary toolbox, so to speak. Here, I'll briefly introduce the ones I've looked at. Before I begin, note that I sometimes add the suffix "lang" to the names of programming languages (e.g. `R` vs `Rlang`). This is a now widespread convention as the name may have other common usages (useful especially in Google searches).
+In the previous post I spoke of finding a new language to include in my toolbox. Here, I'll briefly introduce the ones I've looked at. Before I begin, note that I sometimes add the suffix "lang" to the names of programming languages (e.g. `R` vs `Rlang`). This is a now widespread convention as the name may have other common usages (useful especially in Google searches).
 
 You may ask why not stick with any one of the existing languages, like C++ or Fortran?
 
