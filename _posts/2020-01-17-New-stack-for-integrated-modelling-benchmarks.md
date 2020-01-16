@@ -96,7 +96,8 @@ For Julia I also profiled the execution time for comparison purposes as its JIT 
 All timings were conducted on my laptop with a Core i7-8550u.
 Timings are best out of three. Before jumping to conclusions, please read the **Other Notes** section below.
 
-You can go see the code for yourself [here](https://github.com/ConnectedSystems/loop-lang-comparison)
+You can go see the code for yourself [here](https://github.com/ConnectedSystems/loop-lang-comparison).
+
 
 **High-Level Languages**
 
@@ -108,7 +109,7 @@ You can go see the code for yourself [here](https://github.com/ConnectedSystems/
 | R (v3.6.1) 	| 6.984 	|  	|
 | Julia (total runtime) 	| 0.287 	| Difference between total and initial run timings is due to JIT warmup 	|
 | Julia (initial run) 	| 0.043597 	| Using internal `@time` macro 	|
-| Julia (subsequent runs) 	| 0.003426 	|  	|
+| Julia (subsequent runs) 	| 0.003426 	| as above 	|
 
 
 **Ahead-of-Time compiled languages**
@@ -117,13 +118,13 @@ You can go see the code for yourself [here](https://github.com/ConnectedSystems/
 |--------------------	|------------------	|-------------------------------------------------------------------	|
 | C 	| 0.036 	| Compiled using `gcc` v4.7.0 with `-O2` flag 	|
 | Fortran 	| 0.043 	| Compiled using `gfortran` v4.7.0 with `-O2` flag 	|
-| Go (v1.13.5) 	| 0.109 	|  	|
-| V (v0.1.23) 	| 0.168 	|  	|
-| Nim (v1.0.4) 	| 0.033 	| Flags used: -d:release --passC:-flto --passL:-s --gc:markAndSweep 	|
+| Go (v1.13.5) 	| 0.109 	| `go build loop.go` |
+| V (v0.1.23) 	| 0.168 	| `v ./loop.v` |
+| Nim (v1.0.4) 	| 0.033 	| Flags used: `-d:release --passC:-flto --passL:-s --gc:markAndSweep` 	|
 
 **Other notes**
 
-Huge performance gains from just adding two lines to Python code to use Numba. Even bigger gains from adding type information for Cython and compiling. Cython holds up pretty well in my opinion.
+Huge performance gains from just adding [two lines](https://github.com/ConnectedSystems/loop-lang-comparison/blob/master/Python/nbloop.py) to Python code to use Numba. Even bigger gains from adding type information for Cython and compiling. Cython holds up pretty well all things considered in my opinion.
 
 Nimlang's syntax is very similar to Python - it could almost be a drop-in replacement. Overall, I'm impressed with Nim. 
 
@@ -136,11 +137,13 @@ That said, the early stage of development for V is very evident, I ran into seve
 
 Julia's JIT warmup is fairly significant and from experience gets worse as more code and packages are used. Depending on what packages are included, this can be seconds.
 
-JIT compilation to bytecode was added to R in v3.4 which significantly speeds up looping compared to v2.x. There's also compilers which targets the JVM ([Renjin](https://www.renjin.org/) and [GraalVM](https://www.graalvm.org/)) but I've yet to try it.
+JIT compilation to bytecode was added to R in v3.4 which significantly speeds up looping compared to v2.x. There's also compilers which targets the JVM ([Renjin](https://www.renjin.org/) and [GraalVM](https://www.graalvm.org/)) but I've yet to try these.
+
+## A side-story on R
 
 While R is a very capable language, I never fully got onboard just simply because of its many quirks. It always seems to be planning something devious to catch me by surprise: "ah-ha! Gotcha!".
 
-I'm relatively comfortable with R but even for this simple benchmark I got caught out momentarily - printing out the result directly outputs an incorrect value. In the end I worked out that you have to explicitly cast to an integer before printing:
+I'm relatively comfortable with R but even for this simple benchmark I got caught out momentarily. Printing out the result directly outputs an incorrect value.
 
 ```R
 # Seemingly incorrect value!
@@ -151,13 +154,40 @@ print(as.integer(result))
 # [1] 100000046
 ```
 
+This reminded me of my "favourite" R gotcha:
+
+```R
+> is.integer(1)
+[1] FALSE
+```
+
+What's happening here is that R stores everything as a `double` underneath unless you specify that you specifically want an integer by adding `L` to the value.
+
+You can see this in action below:
+
+```R
+is.integer(1)
+# [1] FALSE
+# Above is false because "1" is actually a double "1.0"
+
+is.integer(1L)
+# [1] TRUE
+# `L` indicates you explicitly want an integer.
+```
+
+So two solutions here:
+
+Either explicitly cast the result to an integer using `as.integer()` or add `L` to the initial values so subsequent operations are all done on integers.
+
+In the end I went with the first approach. Interestingly I saw a performance regression when using explicit integer types (the code slowed by a second or so). I'm assuming that R is optimized for calculations with floats.
+
 ## Final thoughts
 
-Nim is looking to be "a better Cython" as you can write [Python extensions in Nim](https://github.com/yglukhov/nimpy).
+Nim is looking to be "a better Cython" as you can write [Python extensions in Nim](https://github.com/yglukhov/nimpy). In fact, I may well end up using it in conjunction with Julia.
 
-I find the syntax for Golang enjoyable, but wary of its verbosity and repetitious nature as it lacks generics. A common complaint is having to write out essentially the same thing over and over with slight differences. It's also lacking common tooling for data science purposes (perhaps unsurprising given its focus on corporate development) so at best it will be used for very specific purposes.
+I find the syntax for Golang enjoyable, but wary of its verbosity and repetitious nature as it lacks generics. A common complaint is having to write out essentially the same thing over and over with small differences to handle different data types. It's also lacking common tooling for data science purposes (perhaps unsurprising given its focus on corporate/business/infrastructure development) so at best it will be used for very specific purposes.
 
-I'm impressed so far with Julia. While its JIT warmup hampers it for short single-use purposes, if multiple runs can be conducted then it's very possible for it to outperform C and Fortran.
+I'm impressed so far with Julia. While its JIT warmup hampers its use for short single use cases, if multiple (long) runs can be conducted then it's very possible for it to outperform C and Fortran.
 
 Possible language trifecta:
 
