@@ -84,7 +84,7 @@ for n in range(1, 10000001):
 # End for
 
 print(result)
-# Output: 10000046
+# Output: 100000046
 ```
 
 Total runtimes were captured using [ptime](http://www.pc-tools.net/win32/) with the sole exception of Vlang which I could not get working on Windows. Timings for V were instead taken using `time` via Windows Subsystem for Linux. In this case I use the timing as reported under the `Real` column.
