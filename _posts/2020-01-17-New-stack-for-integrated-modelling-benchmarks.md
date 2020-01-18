@@ -37,7 +37,7 @@ circle->area()
 circle%area()
 ```
 
-Enter `Julia` (2018), `Go` (2012), `Nim` (2019) and `V` (v1.0 not yet released).
+Enter Julia (2018), Go (2012), Nim (2019) and V (v1.0 not yet released).
 
 In my first post I spoke of learning **Julia**, which has the potential to become the new Python/R/Matlab. In my current experience applying it, I've found it enjoyable to use albeit with small instances of frustration to be expected when one is learning a new language.
 
@@ -175,11 +175,11 @@ is.integer(1L)
 # `L` indicates you explicitly want an integer.
 ```
 
-So two solutions here:
+So three solutions here:
 
-Either explicitly cast the result to an integer using `as.integer()` or add `L` to the initial values so subsequent operations are all done on integers.
+Either explicitly cast the result to an integer using `as.integer()` or add `L` to the initial values so subsequent operations are all done on integers. The third approach is to provide a value to the `print` function to explictly tell R to show all digits: `print(result, digits=20)`. By default, R only shows the first 7 after which it "helpfully" truncates it.
 
-In the end I went with the first approach. Interestingly I saw a performance regression when using explicit integer types (the code slowed by a second or so). I'm assuming that R is optimized for calculations with floats.
+In the end I went with the first approach as it was the first I tried. Interestingly I saw a performance regression when using explicit integer types (the code slowed by a second or so). I'm assuming that R is optimized for calculations with floats.
 
 ## Final thoughts
 
