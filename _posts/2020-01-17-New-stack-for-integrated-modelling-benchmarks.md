@@ -107,9 +107,9 @@ You can go see the code for yourself [here](https://github.com/ConnectedSystems/
 | Python w/ Numba (v0.46.0) 	| 0.99 	| Added two lines!  	|
 | Cython (v0.29.13) 	| 0.142 	|  	|
 | R (v3.6.1) 	| 6.984 	|  	|
-| Julia (total runtime) 	| 0.287 	| Difference between total and initial run timings is due to JIT warmup 	|
-| Julia (initial run) 	| 0.043597 	| Using internal `@time` macro 	|
-| Julia (subsequent runs) 	| 0.003426 	| as above 	|
+| Julia - total runtime (v1.3) 	| 0.287 	| Difference between total and initial run timings is due to JIT warmup 	|
+| Julia - initial run 	| 0.043597 	| Using internal `@time` macro 	|
+| Julia - subsequent runs 	| 0.003426 	| as above 	|
 
 
 **Ahead-of-Time compiled languages**
@@ -168,7 +168,7 @@ You can see this in action below:
 ```R
 is.integer(1)
 # [1] FALSE
-# Above is false because "1" is actually a double "1.0"
+# Above is false because `1` is actually a double `1.0`
 
 is.integer(1L)
 # [1] TRUE
@@ -183,7 +183,7 @@ In the end I went with the first approach as it was the first I tried. Interesti
 
 ## Final thoughts
 
-Nim is looking to be "a better Cython" as you can write [Python extensions in Nim](https://github.com/yglukhov/nimpy). In fact, I may well end up using it in conjunction with Julia.
+Nim is looking to be "a better Cython" as you can write [Python extensions in Nim](https://github.com/yglukhov/nimpy). In fact, I may well end up using it as such for both Python and Julia.
 
 I find the syntax for Golang enjoyable, but wary of its verbosity and repetitious nature as it lacks generics. A common complaint is having to write out essentially the same thing over and over with small differences to handle different data types. It's also lacking common tooling for data science purposes (perhaps unsurprising given its focus on corporate/business/infrastructure development) so at best it will be used for very specific purposes.
 
