@@ -20,7 +20,7 @@ title                    : "Connected Systems"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Takuya Iwanaga"
-description              : "Blog on software development for Integrated Modelling."
+description              : "Blog on software development for integrated multi-system modelling."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : ConnectedSystems/connectedsystems.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
