@@ -12,7 +12,6 @@ Outside of this work, I have contributed to several open-source modelling projec
 I am experienced with Python and R, and has worked with Fortran, C, MATLAB, and more recently, Julialang.
 
 ## Related work
----------------
 
 I am an active contributor to the [SALib Python package](https://github.com/salib/salib).
 
