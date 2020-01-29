@@ -50,7 +50,7 @@ I also enjoy working and helping others improve computational performance of the
 
 --------------------
 
-[A tiered, system-of-systems modeling framework for resolving complex socio-environmental policy issues (2019)](10.1016/j.envsoft.2018.11.011)
+[A tiered, system-of-systems modeling framework for resolving complex socio-environmental policy issues (2019)](https://dx.doi.org/10.1016/j.envsoft.2018.11.011)
 
 <span class="__dimensions_badge_embed__" data-doi="10.1016/j.envsoft.2018.11.011" data-style="large_rectangle"></span>
 
