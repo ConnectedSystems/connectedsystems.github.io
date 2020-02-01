@@ -64,6 +64,8 @@ I also enjoy working and helping others improve computational performance of the
 
 [Integrated water assessment and modelling: A bibliometric analysis of trends in the water resource sector (2017)](https://dx.doi.org/10.1016/j.jhydrol.2017.07.031)
 
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.jhydrol.2017.07.031" data-style="large_rectangle"></span>
+
 --------------------
 
 [Design and implementation of a web-based groundwater data management system (2013)](https://dx.doi.org/10.1016/j.matcom.2012.11.009)
