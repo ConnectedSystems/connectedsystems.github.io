@@ -32,6 +32,12 @@ I also enjoy working and helping others improve computational performance of the
 
 ## Publications
 
+[A socio-environmental model for exploring sustainable water management futures: Participatory and collaborative modelling in the Lower Campaspe catchment](https://dx.doi.org/10.1016/j.ejrh.2020.100669)
+
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.ejrh.2020.100669" data-style="large_rectangle"></span>
+
+--------------------
+
 [Certain trends in uncertainty and sensitivity analysis: An overview of software tools and techniques (2020)](https://dx.doi.org/10.1016/j.envsoft.2019.104588)
 
 <span class="__dimensions_badge_embed__" data-doi="10.1016/j.envsoft.2019.104588" data-style="large_rectangle"></span>
