@@ -32,7 +32,31 @@ I also enjoy working and helping others improve computational performance of the
 
 ## Publications
 
-[A socio-environmental model for exploring sustainable water management futures: Participatory and collaborative modelling in the Lower Campaspe catchment](https://dx.doi.org/10.1016/j.ejrh.2020.100669)
+[Socio-technical scales in socio-environmental modeling: managing a system-of-systems modeling approach (2020)](https://dx.doi.org/10.1016/j.envsoft.2020.104885)
+
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.envsoft.2020.104885" data-style="large_rectangle"></span>
+
+--------------------
+
+[Worth of hydraulic and water chemistry observation data in terms of the reliability of surface water-groundwater exchange flux predictions under varied flow conditions (2020)](https://dx.doi.org/10.1016/j.jhydrol.2020.125441)
+
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.jhydrol.2020.125441" data-style="large_rectangle"></span>
+
+--------------------
+
+[Sensitivity Analysis of Spatially Distributed Environmental Models- A pragmatic framework for the exploration of uncertainty sources (2020)](https://dx.doi.org/10.1016/j.envsoft.2020.104857)
+
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.envsoft.2020.104857" data-style="large_rectangle"></span>
+
+--------------------
+
+[3D lithological mapping of borehole descriptions using word embeddings (2020)](https://doi.org/10.1016/j.cageo.2020.104516)
+
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.cageo.2020.104516" data-style="large_rectangle"></span>
+
+--------------------
+
+[A socio-environmental model for exploring sustainable water management futures: Participatory and collaborative modelling in the Lower Campaspe catchment (2020)](https://dx.doi.org/10.1016/j.ejrh.2020.100669)
 
 <span class="__dimensions_badge_embed__" data-doi="10.1016/j.ejrh.2020.100669" data-style="large_rectangle"></span>
 
