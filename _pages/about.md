@@ -32,6 +32,24 @@ I also enjoy working and helping others improve computational performance of the
 
 ## Publications
 
+[Property-based sensitivity analysis: An approach to identify model implementation and integration errors](https://doi.org/10.1016/j.envsoft.2021.105013)
+
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.envsoft.2021.105013" data-style="large_rectangle"></span>
+
+--------------------
+
+[The Future of Sensitivity Analysis: An essential discipline for systems modeling and policy support](https://doi.org/10.1016/j.envsoft.2020.104954)
+
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.envsoft.2020.104954" data-style="large_rectangle"></span>
+
+--------------------
+
+[A formative and self-reflective approach to monitoring and evaluation of interdisciplinary team research: an integrated water resource modelling application in Australia (2021)](https://doi.org/10.1016/j.jhydrol.2021.126070)
+
+<span class="__dimensions_badge_embed__" data-doi="10.1016/j.jhydrol.2021.126070" data-style="large_rectangle"></span>
+
+--------------------
+
 [Socio-technical scales in socio-environmental modeling: managing a system-of-systems modeling approach (2020)](https://dx.doi.org/10.1016/j.envsoft.2020.104885)
 
 <span class="__dimensions_badge_embed__" data-doi="10.1016/j.envsoft.2020.104885" data-style="large_rectangle"></span>
