@@ -32,13 +32,13 @@ I also enjoy working and helping others improve computational performance of the
 
 ## Publications
 
-[Property-based sensitivity analysis: An approach to identify model implementation and integration errors](https://doi.org/10.1016/j.envsoft.2021.105013)
+[Property-based sensitivity analysis: An approach to identify model implementation and integration errors (2021)](https://doi.org/10.1016/j.envsoft.2021.105013)
 
 <span class="__dimensions_badge_embed__" data-doi="10.1016/j.envsoft.2021.105013" data-style="large_rectangle"></span>
 
 --------------------
 
-[The Future of Sensitivity Analysis: An essential discipline for systems modeling and policy support](https://doi.org/10.1016/j.envsoft.2020.104954)
+[The Future of Sensitivity Analysis: An essential discipline for systems modeling and policy support (2021)](https://doi.org/10.1016/j.envsoft.2020.104954)
 
 <span class="__dimensions_badge_embed__" data-doi="10.1016/j.envsoft.2020.104954" data-style="large_rectangle"></span>
 
