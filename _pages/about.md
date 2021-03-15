@@ -17,7 +17,7 @@ I am an active contributor to the [SALib Python package](https://github.com/sali
 
 I have developed code and packages to simplify the [statistical analysis of spatial data](https://github.com/MamadioCMCC/HazardRiskScripts/tree/master/scripts/HazardStats).
 
-I assisted in an [independent review](https://trove.nla.gov.au/work/237587298?selectedversion=NBD66255631) of the Queensland Govt. Paddock to Reef Modelling Program.
+I assisted in the independent reviews of the [Paddock to Reef Modelling Program](https://trove.nla.gov.au/work/237587298?selectedversion=NBD66255631) and the [Source Murray Model](https://www.mdba.gov.au/sites/default/files/pubs/Independent%20review%20of%20Source%20Murray%20Model%20%28SMM%29%20report_1.pdf)
 
 I have run workshops for students and staff on Integrated Modelling and exploratory interactive visualization, including a workshop run at Hohai University, Nanjing China.
 
